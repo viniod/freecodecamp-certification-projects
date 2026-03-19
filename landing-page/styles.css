@@ -1,88 +1,234 @@
-body {
-  background-color: white;
-  color: #2c2c2c;
-  font-family: Times New Roman, sans-serif;
-}
-
-main {
-  background-color: #f4f1ea;
-  width: 100%;
-  max-width: 1500px;
-  border-radius: 10px;
-  margin: 40px auto;
-  padding: 10px 25px;
-  text-align: center;
-  font-size: 1.2rem
-}
-
-figure {
-  background-color: white;
-  max-width: 1000px;
-  width: 95%;
-  height: auto;
-  padding: 0 2px 15px 2px; 
-  margin: 20px auto;
-}
-
-.resume {
-  font-size: 1.1em
-}
-
-#tribute-info {
-  display: block;
-  max-width: 800px;
-  margin: 40px auto 10px auto;
-  text-align: left;
-  font-style: italic;
-}
-
-cite {
-  display: block;
-  max-width: 800px;
-  margin: 0 auto 30px auto;
-  text-align: left;
-}
-
-img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 1px 0 8px 0;
-}
-
-.time-line {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
+/*reset*/
+* {
+  margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
-.time-line li {
-  margin: 10px 0;
-  line-height: 1.6;
+/*header*/
+#header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0f172a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
 }
 
-span {
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/*logo*/
+#header-img {
+  width: 50px;
+  filter: brightness(0) saturate(100%) invert(68%) sepia(79%) saturate(747%) hue-rotate(165deg);
+}
+
+#header h1 {
+  margin-left: 10px;
+  color: #38bdf8;
+  font-size: 24px;
   font-weight: bold;
-  color: #3b3b3b;
 }
 
-.read-more {
-  font-weight: bold;
-  font-size: 1.2em;
+/*navbar*/
+#nav-bar {
+  display: flex;
+  gap: 20px;
 }
 
-a {
+.nav-link {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #38bdf8;
+}
+
+body {
+  padding-top: 100px;
+  background-color: #020617;
+  color: white;
+}
+
+/*sections*/
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/*video*/
+#product iframe {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+/*recursos*/
+#resources {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 60px 40px;
+  text-align: left; /* IMPORTANTE */
+}
+
+.resource-item {
+  display: flex;
+  align-items: center; /* alinha ícone com o texto */
+  gap: 20px;
+}
+
+/* ícone */
+.resource-item i {
+  font-size: 28px;
+  color: #38bdf8;
+  min-width: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+/* container do texto */
+.resource-item .text {
+  display: flex;
+  flex-direction: column;
+}
+
+/* título */
+.resource-item h2 {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* descrição */
+.resource-item p {
+  margin: 5px 0 0;
+  max-width: 700px;
+}
+
+/*planos*/
+#plans {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#plans > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 350px;
+  background-color: #f9f9f9;
+  color: black;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 230px;
+  margin: 10px;
+  padding-bottom: 15px;
+}
+
+.plans-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#plans h3 {
+  background-color: #ddd;
+  padding: 15px;
+  margin: 0;
+  font-size: 20px;
+}
+
+.price {
+  font-size: 24px;
+  color: #38bdf8;
+  margin: 15px 0;
+}
+
+#plans p {
+  margin: 8px 0;
+}
+
+#plans button {
+  margin: 10px auto;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  align-items: center;
+}
+
+/*botões*/
+button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #38bdf8;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0ea5e9;
+}
+
+/*form*/
+#form {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#email {
+  padding: 10px;
+  width: 250px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+#submit {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: orange;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-h1 {
-  font-size: 2.5rem;
-  margin-bottom: -5px;
+#submit:hover {
+  background-color: yellow;
 }
 
-h2 {
+/*rodape*/
+footer {
+  background-color: #0f172a;
+  text-align: center;
+  padding: 20px;
   margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
+}
+
+@media (max-width: 768px) {
+  #resources, #plans {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #header {
+    flex-direction: column;
+    gap: 10px;
+  }
 }
