@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <nav id="navbar">
+      <header>Git e GitHub</header>
+      <a class="nav-link" href="#Introducao_ao_Git">Introducao ao Git</a>
+      <a class="nav-link" href="#Inicializando_um_Repositorio">Inicializando um Repositorio</a>
+      <a class="nav-link" href="#Adicionando_e_Salvando_Alteracoes">Adicionando e Salvando Alteracoes</a>
+      <a class="nav-link" href="#Trabalhando_com_Branches">Trabalhando com Branches</a>
+      <a class="nav-link" href="#Enviando_Codigo_para_o_GitHub">Enviando Codigo para o GitHub</a>
+      <a class="nav-link" href="#Bibliografia">Bibliografia</a>
+    </nav>
+
+    <main id="main-doc">
+      <section id="Introducao_ao_Git" class="main-section">
+        <header>Introducao ao Git</header>
+
+        <p>Git é um sistema de controle de versão distribuído muito utilizado no desenvolvimento de software. Ele permite acompanhar alterações feitas em arquivos ao longo do tempo. Com ele, desenvolvedores podem trabalhar em conjunto no mesmo projeto sem sobrescrever o trabalho uns dos outros.</p>
+        <p>Além disso, o Git permite voltar para versões anteriores do código, facilitando a correção de erros ou testes de novas funcionalidades.</p>
+        <p>Algumas funcionalidades do Git: </p>
+
+        <ul>
+          <li>Controle de versão</li>
+          <li>Histórico de alterações</li>
+          <li>Trabalho em equipe</li>
+          <li>Segurança do código</li>
+        </ul>
+        <p>Aqui está um exemplo da base de um código Git: </p>
+        <code>git --version</code>
+      </section>
+
+      <section id="Inicializando_um_Repositorio" class="main-section">
+        <header>Inicializando um Repositorio</header>
+
+        <p>Antes de começar a usar o Git em um projeto, é necessário inicializar um repositório. Isso cria uma pasta oculta onde o Git armazenará todas as informações de controle de versão.</p>
+        <p>Alguns passos para inicializar um repositório: </p>
+        <ol>
+          <li>Criar um repositório</li>
+          <code>git init</code>
+
+          <li>Monitorar alterações</li>
+          
+          <p>Após inicializar o repositório, o Git começará a monitorar as alterações feitas nos arquivos do projeto.</p>
+          <code>git status</code>
+
+          <li>Preparar o projeto para versionamento</li>
+        </ol>
+        <p>Esses são normalmente os primeiros passos quando começamos um novo projeto com Git.</p>
+      </section>
+
+      <section id="Adicionando_e_Salvando_Alteracoes" class="main-section">
+        <header>Adicionando e Salvando Alteracoes</header>
+
+        <p>Quando um arquivo é modificado, o Git identifica essa mudança. No entanto, para salvar essa alteração no histórico do projeto, é necessário adicioná-la ao estágio de preparação.</p>
+
+        <ol>
+          <li>Adicionar arquivos ao stage</li>
+          <p>Primeiro passo é adicionar um arquivo.</p>
+          <code>git add arquivo.txt</code>
+          
+          <code>git add</code>
+          
+          <li>Criar commits</li>
+          <p>Depois de adicionar os arquivos, utilizamos o comando commit para registrar permanentemente as mudanças.</p>
+          <code>git commit -m "Adicionando nova funcionalidade"</code>
+          <p>Cada commit representa um ponto específico na história do projeto.</p>
+        </ol>
+      </section>
+
+      <section id="Trabalhando_com_Branches" class="main-section">
+        <header>Trabalhando com Branches</header>
+
+        <p>Branches são ramificações do projeto principal. Elas permitem desenvolver novas funcionalidades sem afetar a versão principal do código.</p>
+        <p>Cada branch pode ter alterações diferentes e, quando a funcionalidade estiver pronta, pode ser integrada ao projeto principal. Esse recurso é muito utilizado em equipes de desenvolvimento.</p>
+        <p>Exemplos: </p>
+
+        <ul>
+          <li>Criar branch</li>
+          <p><code>git branch nova-feature</code></p>
+
+          <li>Alterar branch</li>
+          <p><code>git checkout nova-feature</code></p>
+
+          <li>Mesclar alterações</li>
+          <p><code>git merge nova-feature</code></p>
+        </ul>
+      </section>
+
+      <section id="Enviando_Codigo_para_o_GitHub" class="main-section">
+        <header>Enviando Codigo para o GitHub</header>
+
+        <p>O GitHub é uma plataforma online que hospeda repositórios Git. Ele permite compartilhar código, colaborar com outras pessoas e armazenar projetos na nuvem.</p>
+        <p>Depois de criar um repositório no GitHub, é possível conectar o projeto local e enviar as alterações para a plataforma. Isso facilita o trabalho em equipe e o backup do código.</p>
+        <p>Exemplos: </p>
+
+        <ul>
+          <li>Conectar repositório local</li>
+          <p><code>git remote add origin https://github.com/usuario/repositorio.git</code></p>
+
+          <li>Enviar alterações</li>
+          <p><code>git push origin main</code></p>
+
+          <li>Atualizar projeto</li>
+          <p><code>git pull origin main</code></p>
+        </ul>
+      </section>
+
+      <section id="Bibliografia" class="main-section">
+        <header>Bibliografia</header>
+        <p>Toda informação dessa página foi com base no <a href="#">ChatGPT</a>.</p>
+      </section>
+
+    </main>
+  </body>
+</html>
